@@ -1,0 +1,15 @@
+Algorithm HealthDataEntry
+Input: UserHealthData[]  // array of daily health readings
+Output: ConfirmationMessages[]
+
+1. For each entry in UserHealthData do
+2.     If entry.BloodSugar > 0 AND entry.HeartRate > 0 AND entry.BloodPressure != "" then
+3.         Save entry to Database
+4.         Append "Data Saved Successfully" to ConfirmationMessages
+5.     Else
+6.         Append "Invalid Data, Please Re-enter" to ConfirmationMessages
+7.     End If
+8. End For
+
+9. Return ConfirmationMessages
+End Algorithm
